@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Components" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ad-dL-Kv6" customClass="Header1Label" customModule="Components" customModuleProvider="target">
+                                <rect key="frame" x="20" y="40" width="335" height="49.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAq-g8-yeT" customClass="Header2Label" customModule="Components" customModuleProvider="target">
+                                <rect key="frame" x="20" y="110.5" width="335" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body style sentence" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uby-HB-wO3" customClass="BodyLabel" customModule="Components" customModuleProvider="target">
+                                <rect key="frame" x="20" y="191.5" width="335" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgg-x8-cHS" customClass="PrimaryButton" customModule="Components" customModuleProvider="target">
+                                <rect key="frame" x="20" y="276.5" width="335" height="50"/>
+                                <state key="normal" title="Action"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwC-yZ-aNX" customClass="RegularButton" customModule="Components" customModuleProvider="target">
+                                <rect key="frame" x="120" y="346.5" width="135" height="25"/>
+                                <state key="normal" title="Alternate Action"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SAq-g8-yeT" firstAttribute="leading" secondItem="6Ad-dL-Kv6" secondAttribute="leading" id="2Tr-fz-0se"/>
+                            <constraint firstItem="uby-HB-wO3" firstAttribute="leading" secondItem="SAq-g8-yeT" secondAttribute="leading" id="FC6-vc-8Rk"/>
+                            <constraint firstItem="RwC-yZ-aNX" firstAttribute="top" secondItem="Kgg-x8-cHS" secondAttribute="bottom" constant="20" id="GOD-vj-yEw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Ad-dL-Kv6" secondAttribute="trailing" constant="20" id="IDU-vn-2h1"/>
+                            <constraint firstItem="RwC-yZ-aNX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XqT-PV-6tE"/>
+                            <constraint firstItem="Kgg-x8-cHS" firstAttribute="trailing" secondItem="uby-HB-wO3" secondAttribute="trailing" id="Y3v-G7-7yh"/>
+                            <constraint firstItem="SAq-g8-yeT" firstAttribute="trailing" secondItem="6Ad-dL-Kv6" secondAttribute="trailing" id="bRh-K0-9m5"/>
+                            <constraint firstItem="uby-HB-wO3" firstAttribute="top" secondItem="SAq-g8-yeT" secondAttribute="bottom" constant="40" id="eQA-aF-jzN"/>
+                            <constraint firstItem="uby-HB-wO3" firstAttribute="trailing" secondItem="SAq-g8-yeT" secondAttribute="trailing" id="gCE-2n-C0g"/>
+                            <constraint firstItem="Kgg-x8-cHS" firstAttribute="leading" secondItem="uby-HB-wO3" secondAttribute="leading" id="iZu-Uc-f6X"/>
+                            <constraint firstItem="SAq-g8-yeT" firstAttribute="top" secondItem="6Ad-dL-Kv6" secondAttribute="bottom" constant="21" id="nVz-m1-wjS"/>
+                            <constraint firstItem="Kgg-x8-cHS" firstAttribute="top" secondItem="uby-HB-wO3" secondAttribute="bottom" constant="60" id="tvx-gB-ZbO"/>
+                            <constraint firstItem="6Ad-dL-Kv6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uLX-w8-RQ5"/>
+                            <constraint firstItem="6Ad-dL-Kv6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="wGU-km-Lec"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bodyLabel" destination="uby-HB-wO3" id="7kg-2O-G71"/>
+                        <outlet property="header1Label" destination="6Ad-dL-Kv6" id="RHd-ga-lUS"/>
+                        <outlet property="header2Label" destination="SAq-g8-yeT" id="oLa-OB-Qwv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
